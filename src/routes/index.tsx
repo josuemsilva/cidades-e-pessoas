@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 import { useDrawerContext } from '../shared/contexts';
-import {Routes,Route,Navigate} from 'react-router-dom';
+import {Routes,Route,Navigate, HashRouter} from 'react-router-dom';
 import { DetalheDeCidades } from '../pages/cidades/DetalheDeCidades';
 import { ListagemDeCidades } from '../pages/cidades/ListagemDeCidades';
 import { Dashboard, ListagemDePessoas, DetalheDePessoas } from '../pages';
@@ -29,16 +29,19 @@ export const AppRoutes = () => {
   }, [setDrawerOptions])
 
   return (
-    <Routes>
-      <Route exact path='/pagina-inicial' element={<Dashboard/>}/>
+    <HashRouter>
 
-      <Route exact path='/pessoas' element={<ListagemDePessoas/>}/>
-      <Route exact path='/pessoas/detalhe/:id' element={<DetalheDePessoas/>}/>
+      <Routes>
+        <Route path='/pagina-inicial' element={<Dashboard/>}/>
 
-      <Route exact path='/cidades' element={<ListagemDeCidades/>}/>
-      <Route exact path='/cidades/detalhe/:id' element={<DetalheDeCidades/>}/>
+        <Route path='/pessoas' element={<ListagemDePessoas/>}/>
+        <Route path='/pessoas/detalhe/:id' element={<DetalheDePessoas/>}/>
 
-      <Route path='*' element={<Navigate to="/pagina-inicial"/>}/>
-    </Routes>
+        <Route path='/cidades' element={<ListagemDeCidades/>}/>
+        <Route path='/cidades/detalhe/:id' element={<DetalheDeCidades/>}/>
+
+        <Route path='*' element={<Navigate to="/pagina-inicial"/>}/>
+      </Routes>
+    </HashRouter>
   )
 }
