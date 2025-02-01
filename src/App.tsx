@@ -1,4 +1,4 @@
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 import './shared/forms/TraducoesYup';
 
@@ -12,13 +12,13 @@ export const App = () => {
       <AppThemeProvider>
         <Login>
           <DrawerProvider>
-            <BrowserRouter>
+            <HashRouter>
 
               <MenuLateral>
                 <AppRoutes/>
               </MenuLateral>
 
-            </BrowserRouter>
+            </HashRouter>
           </DrawerProvider>
         </Login>
       </AppThemeProvider>
