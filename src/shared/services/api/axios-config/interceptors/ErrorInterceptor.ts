@@ -6,7 +6,7 @@ export const errorInterceptor = (error: AxiosError) => {
   }
 
   if(error.response?.status === 401) {
-    // not done
+    // to-do
   }
 
   return Promise.reject(error);

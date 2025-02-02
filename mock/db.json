@@ -4,13 +4,13 @@
       "id": "16",
       "nomeCompleto": "Josué",
       "email": "joojmoutinho45@gmail.com",
-      "cidadeId": 1
+      "cidadeId": 2
     },
     {
+      "id": "19",
       "nomeCompleto": "André",
       "email": "andre@gmail.com",
-      "cidadeId": 1,
-      "id": "19"
+      "cidadeId": 1
     },
     {
       "nomeCompleto": "Lavinia",
@@ -25,16 +25,28 @@
       "id": "21"
     },
     {
-      "nomeCompleto": "Cléber",
+      "id": "22",
+      "cidadeId": 4,
       "email": "cleber@gmail.com",
-      "cidadeId": 5,
-      "id": "22"
+      "nomeCompleto": "Cléber"
+    },
+    {
+      "id": "b5f0",
+      "cidadeId": 3,
+      "email": "adi46604@gmail.com",
+      "nomeCompleto": "Adriana"
+    },
+    {
+      "id": "3755",
+      "cidadeId": 1,
+      "email": "adi456@gmail.com",
+      "nomeCompleto": "Adriana"
     }
   ],
   "cidades": [
     {
-      "nome": "Novo Hamburgo",
-      "id": "1"
+      "id": "1",
+      "nome": "Novo Hamburgo"
     },
     {
       "nome": "Dois Irmãos",
@@ -49,8 +61,8 @@
       "id": "4"
     },
     {
-      "nome": "São Leopoldo",
-      "id": "5"
+      "id": "5",
+      "nome": "São Leopoldo"
     },
     {
       "nome": "Tramandaí",
@@ -61,8 +73,12 @@
       "id": "7"
     },
     {
-      "nome": "Canela",
-      "id": "8"
+      "id": "8",
+      "nome": "Canela"
+    },
+    {
+      "id": "0a9c",
+      "nome": "Canoas"
     }
   ],
   "auth": {
